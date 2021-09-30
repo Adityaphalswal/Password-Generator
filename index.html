@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Password Generator</title>
 </head>
@@ -12,16 +12,15 @@
   <div class="container">
     <h2>Password Generator</h2>
     <div class="result-container">
-      <span class="result">
+      <span id="result"></span>
         <button class="btn" id="clipboard">
           <i class="far fa-clipboard"></i>
         </button>
-      </span>
     </div>
     <div class="settings">
       <div class="setting">
         <label for="">Password Length</label>
-        <input type="number"id="Length" min="4" max="20" value="20">
+        <input type="number" id="length" min="4" max="20" value="20">
       </div>
       <div class="setting">
         <label>Include Uppercase Letters</label>
@@ -33,7 +32,7 @@
       </div>
       <div class="setting">
         <label>Include Numbers</label>
-        <input type="checkbox" id="Numbers" checked>
+        <input type="checkbox" id="numbers" checked>
       </div>
       <div class="setting">
         <label>Include Symbols</label>
